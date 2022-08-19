@@ -53,4 +53,4 @@ streamlit.write('The user entered ', fruit_choice1)
 #streamlit.stop()
 
 # This will not work correctly
-my_cur.execute("insert into pc_rivery_db.public.fruit_load_list values ('jackfruit','papaya','kiwi','guava')")
+my_cur.execute("insert into pc_rivery_db.public.fruit_load_list values ('jackfruit'),('papaya'),('kiwi'),('guava')")

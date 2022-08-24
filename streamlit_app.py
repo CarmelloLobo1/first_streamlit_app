@@ -6,7 +6,7 @@ from urllib.error import URLError
 
 streamlit.title("My Parents New Healthy Diner")
 streamlit.header("Breakfast Menu")
-streamlit.text("🥣 Omega 3 & Blueberry Oatmeal")
+streamlit.text1("🥣 Omega 3 & Blueberry Oatmeal")
 streamlit.text("🥗 Kale,Spinach & Rocket Smoothie")
 streamlit.text("🐔 Hard Boiled Free-Range Egg")
 streamlit.text("🥑🍞 Avocado Toast")
@@ -32,7 +32,7 @@ streamlit.header("Fruityvice Fruit Advice!")
 try:
   fruit_choice = streamlit.text_input('What fruit would you like information about?')
   if not fruit_choice:
-    streamlit.error1("Please select a fruit to get information")
+    streamlit.error("Please select a fruit to get information")
   else:  
     back_from_fuction = get_fruityvice_data(fruit_choice)
     streamlit.dataframe(back_from_fuction)
